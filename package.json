@@ -1,0 +1,25 @@
+{
+    "name": "ordo-lang",
+    "displayName": "Ordo Lang",
+    "description": "Syntax highlighting for ordo lang",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.33.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ordo",
+            "aliases": ["Ordo", "ordo"],
+            "extensions": [".ordo"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ordo",
+            "scopeName": "source.ordo",
+            "path": "./syntaxes/ordo.tmLanguage.json"
+        }]
+    }
+}
